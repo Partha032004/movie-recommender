@@ -1,9 +1,13 @@
 import streamlit as st
 import joblib
 import requests
+import os
 
 def movies_poster(movie_id):
-    response=requests.get('https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US'.format(movie_id))
+    
+    TMDB_API_KEY = os.environ.get("TMDB_API_KEY")
+    response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}&language=en-US')
+
     data=response.json()
     return "https://image.tmdb.org/t/p/w500/"+data['poster_path']
 
