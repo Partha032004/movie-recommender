@@ -6,8 +6,8 @@ A simple content-based movie recommender system built with Python, Streamlit, an
 
 ## 🚀 Demo
 
-🌐 [Live App on Render](https://your-app-link.onrender.com)
-
+🌐 [Live App on Render](https://partha-movierecommender-app.onrender.com)
+![App Screenshot](./assets/demo_image.png)
 ---
 
 ## 🧠 How It Works
